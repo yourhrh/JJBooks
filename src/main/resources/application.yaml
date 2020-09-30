@@ -1,0 +1,9 @@
+db:
+  name: books
+  address: 127.0.0.1
+
+sample:
+  name: Sample
+
+application:
+  test: testValue

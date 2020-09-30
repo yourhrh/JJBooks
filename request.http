@@ -1,0 +1,25 @@
+POST http://localhost:8080/books/form
+Content-Type: application/x-www-form-urlencoded
+
+name=Java 완성&author=고동휘&shortContents=JAVA 교육자료&contents=1.Java와 SPRING&price=10000
+
+###
+# JSON sample
+POST http://localhost:8080/books/json
+Content-Type: application/json
+
+{
+  "name": "Java 완성",
+  "author": "고동휘",
+  "shortContents": "JAVA 교육자료",
+  "contents": "1.JAVA란와 SPRING",
+  "price": 10000
+}
+###PathVariable
+GET http://localhost:8080/books/Java 완성
+
+###RequestParam
+GET http://localhost:8080/books?name=Java 완성
+
+
+
