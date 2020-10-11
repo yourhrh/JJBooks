@@ -3,7 +3,7 @@ package kr.couchcoding.books.model;
 import lombok.Builder;
 import lombok.Data;
 
-import java.util.Date;
+import java.util.ArrayList;
 import java.util.List;
 
 @Data
@@ -19,4 +19,11 @@ public class Book {
     String imgSrc;
     String shortContents;
     String contents;
+
+    public void addGenre(String genre){
+        if(genres == null){
+            genres = new ArrayList<>();
+        }
+        genres.add(genre);
+    }
 }
