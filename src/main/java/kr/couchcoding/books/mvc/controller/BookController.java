@@ -38,6 +38,7 @@ public class BookController {
     @GetMapping("/{isbn}")
     public String getBookPath(@PathVariable String isbn, Model model){
         log.info("input isbn : " + isbn);
+        // TODO 내가 만든 페이지로 로드
         return "mvc/index/index2";
     }
     
